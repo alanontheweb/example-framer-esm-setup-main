@@ -15,8 +15,7 @@ async function getBuildOptions(path) {
     entryPoints,
     // minify: true,
     format: "esm",
-    bundle: false,
-
+    bundle: true,
     plugins: [esmPlugin, cssPlugin({ inject: true })],
   };
 }

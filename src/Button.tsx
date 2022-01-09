@@ -95,7 +95,7 @@ Test2.defaultProps = {
 
 addPropertyControls(Test2, {
   title: {
-    title: "lol",
+    title: "maaan",
     type: ControlType.String,
     defaultValue: "Title",
   },
