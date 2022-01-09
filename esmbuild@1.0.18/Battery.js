@@ -1,6 +1,6 @@
 // src/Battery.tsx
-import React from "react.js";
-import { useBattery } from "react-use.js";
+import React from "react";
+import { useBattery } from "react-use";
 var Battery = () => {
   const batteryState = useBattery();
   if (!batteryState.isSupported) {

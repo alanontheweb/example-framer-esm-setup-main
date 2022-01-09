@@ -1,8 +1,8 @@
 // src/Button.tsx
-import React from "react.js";
-import { styled } from "@twind/react.js";
-import { tw, setup } from "twind.js";
-import { addPropertyControls, ControlType } from "framer.js";
+import React from "react";
+import { styled } from "@twind/react";
+import { tw, setup } from "twind";
+import { addPropertyControls, ControlType } from "framer";
 var Test2 = () => {
   setup({
     theme: {

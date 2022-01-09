@@ -1,6 +1,6 @@
 // src/MotionButton.tsx
-import React from "react.js";
-import { motion } from "framer-motion.js";
+import React from "react";
+import { motion } from "framer-motion";
 var style = {
   backgroundColor: "red",
   display: "inline-block",
