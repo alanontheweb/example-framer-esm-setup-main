@@ -19,7 +19,7 @@ exports.esmPlugin = {
         !hasExtension
       ) {
         // Rewrite the imports to include the extension and make external to avoid bundling
-        return { path: `${args.path}.js`, external: true };
+        return { path: `${args.path}`, external: true };
       }
     });
   },
