@@ -1,6 +1,7 @@
-import React from "react";
-import { useBattery } from "react-use";
-const Battery = () => {
+// src/Battery.tsx
+import React from "react.js";
+import { useBattery } from "react-use.js";
+var Battery = () => {
   const batteryState = useBattery();
   if (!batteryState.isSupported) {
     return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("strong", null, "Battery sensor"), ": ", /* @__PURE__ */ React.createElement("span", null, "not supported"));
