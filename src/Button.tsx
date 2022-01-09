@@ -1,6 +1,6 @@
 import React from "react";
-import { styled } from "@twind/react";
-import { tw, setup } from "twind";
+import { styled } from "https://jspm.dev/@twind/react";
+import { tw, setup } from "https://jspm.dev/twind";
 import { addPropertyControls, ControlType } from "framer";
 
 // import Hello from "./Test.tsx"
@@ -13,7 +13,7 @@ export const Test2 = () => {
       colors: {
         // Build your palette here
         gray: "red",
-        red: "yellow",
+        red: "blue",
         blue: "green",
         yellow: "yellow",
       },
