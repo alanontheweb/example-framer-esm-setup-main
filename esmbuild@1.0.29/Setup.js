@@ -1,5 +1,4 @@
 const theme = {
-  darkMode: "class",
   theme: {
     colors: {
       transparent: "transparent",

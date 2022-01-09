@@ -46,7 +46,7 @@ const Test2 = () => {
   });
   console.log("dfd");
   return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("h1", {
-    className: tw`font-bold text(center 5xl white sm:gray-800 md:red)`
+    className: tw`font-bold text(center 5xl primary-600)`
   }, "This is Twind!"), /* @__PURE__ */ React.createElement(Button, {
     variant: "primary"
   }, "Primary Button"));
