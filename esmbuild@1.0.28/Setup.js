@@ -1,12 +1,3 @@
-const varToHsla = (colorValue) => ({ opacityVariable, opacityValue }) => {
-  if (opacityValue !== void 0) {
-    return `hsla(var(${colorValue}), ${opacityValue})`;
-  }
-  if (opacityVariable !== void 0) {
-    return `hsla(var(${colorValue}), var(${opacityVariable}, 1))`;
-  }
-  return `hsl(var(${colorValue}))`;
-};
 const theme = {
   darkMode: "class",
   theme: {
