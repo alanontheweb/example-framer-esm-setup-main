@@ -20,10 +20,10 @@ async function getBuildOptions(path) {
 }
 
 async function getBuildOptions(path) {
-  const entryPoints = await globby([`${path}/**/index.(t|j)s*`]);
+  const entryPoints2 = await globby([`${path}/**/index.(t|j)s*`]);
 
   return {
-    entryPoints,
+    entryPoints2,
     // minify: true,
     format: "esm",
     bundle: true,
