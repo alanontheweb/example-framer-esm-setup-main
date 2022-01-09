@@ -1,6 +1,6 @@
 import React from "react";
-import { styled } from "https://jspm.dev/@twind/react";
-import { tw, setup } from "https://jspm.dev/twind";
+import { styled } from "@twind/react";
+import { tw, setup } from "twind";
 import { addPropertyControls, ControlType } from "framer";
 
 // import Hello from "./Test.tsx"
