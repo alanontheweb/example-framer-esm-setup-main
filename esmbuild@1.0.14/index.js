@@ -1,7 +1,6 @@
-// src/index.tsx
-import { Test2 } from "./Button.js";
-import { Battery } from "./Battery.js";
-import { MotionButton } from "./MotionButton.js";
+import { Test2 } from "./Button";
+import { Battery } from "./Battery";
+import { MotionButton } from "./MotionButton";
 export {
   Battery,
   MotionButton,
