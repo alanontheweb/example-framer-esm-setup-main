@@ -10,7 +10,7 @@ export const Setup = () => {
       colors: {
         // Build your palette here
         gray: "red",
-        red: "blue",
+        red: "green",
         blue: "green",
         yellow: "yellow",
       },

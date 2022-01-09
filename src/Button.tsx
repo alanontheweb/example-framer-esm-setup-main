@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "@twind/react";
-import { tw, setup } from "twind";
+import { tw } from "twind";
 import { addPropertyControls, ControlType } from "framer";
 
 // import Hello from "./Test.tsx"
@@ -8,28 +8,6 @@ import { addPropertyControls, ControlType } from "framer";
 // Learn more: https://www.framer.com/docs/guides/code-components/
 
 export const Test2 = () => {
-  setup({
-    theme: {
-      colors: {
-        // Build your palette here
-        gray: "red",
-        red: "blue",
-        blue: "green",
-        yellow: "yellow",
-      },
-      fontFamily: {
-        sans: ["Helvetica", "sans-serif"],
-        serif: ["Times", "serif"],
-      },
-      extend: {
-        spacing: {
-          128: "32rem",
-          144: "36rem",
-        },
-      },
-    },
-  });
-
   const Button = styled("button", {
     base: `
     appearance-none border-none bg-transparent
