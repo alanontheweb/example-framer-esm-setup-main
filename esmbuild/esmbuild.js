@@ -15,7 +15,19 @@ async function getBuildOptions(path) {
     entryPoints,
     // minify: true,
     format: "esm",
+    bundle: false,
+  };
+}
+
+async function getBuildOptions(path) {
+  const entryPoints = await globby([`${path}/**/index.(t|j)s*`]);
+
+  return {
+    entryPoints,
+    // minify: true,
+    format: "esm",
     bundle: true,
+
     plugins: [esmPlugin, cssPlugin({ inject: true })],
   };
 }

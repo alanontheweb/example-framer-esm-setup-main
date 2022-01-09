@@ -14,12 +14,12 @@ exports.esmPlugin = {
         // This should not be a local node_modules import
         !isNode &&
         // This should be a local path (starting with ./ or ../)
-
+        isLocal &&
         // This should be an import without an extension ("./file")
         !hasExtension
       ) {
         // Rewrite the imports to include the extension and make external to avoid bundling
-        return { path: `${args.path}`, external: true };
+        return { path: `${args.path}.js`, external: true };
       }
     });
   },
