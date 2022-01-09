@@ -2,18 +2,6 @@
 
 // Learn more: https://www.framer.com/docs/guides/code-components/
 
-const varToHsla =
-  (colorValue: string) =>
-  ({ opacityVariable, opacityValue }) => {
-    if (opacityValue !== undefined) {
-      return `hsla(var(${colorValue}), ${opacityValue})`;
-    }
-    if (opacityVariable !== undefined) {
-      return `hsla(var(${colorValue}), var(${opacityVariable}, 1))`;
-    }
-    return `hsl(var(${colorValue}))`;
-  };
-
 export const theme = {
   darkMode: "class",
   theme: {
