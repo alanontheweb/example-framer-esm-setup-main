@@ -3,7 +3,6 @@
 // Learn more: https://www.framer.com/docs/guides/code-components/
 
 export const theme = {
-  darkMode: "class",
   theme: {
     colors: {
       transparent: "transparent",

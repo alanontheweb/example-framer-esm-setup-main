@@ -59,7 +59,7 @@ export const Test2 = () => {
   // Learn more: https://www.framer.com/docs/guides/auto-sizing
   return (
     <>
-      <h1 className={tw`font-bold text(center 5xl white sm:gray-800 md:red)`}>
+      <h1 className={tw`font-bold text(center 5xl primary-600)`}>
         This is Twind!
       </h1>
       <Button variant="primary">Primary Button</Button>
