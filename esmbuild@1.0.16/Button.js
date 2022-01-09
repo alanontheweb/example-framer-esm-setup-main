@@ -1,9 +1,8 @@
-// src/Button.tsx
 import React from "react";
 import { styled } from "@twind/react";
 import { tw, setup } from "twind";
 import { addPropertyControls, ControlType } from "framer";
-var Test2 = () => {
+const Test2 = () => {
   setup({
     theme: {
       colors: {
@@ -82,6 +81,23 @@ addPropertyControls(Test2, {
     defaultValue: "Title"
   }
 });
+const containerStyle = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  overflow: "hidden"
+};
+const squareStyle = {
+  margin: 50,
+  padding: 50,
+  color: "white",
+  fontWeight: 600,
+  borderRadius: 25,
+  backgroundColor: "#09F",
+  width: "max-content",
+  whiteSpace: "pre-wrap",
+  flexShrink: 0
+};
 export {
   Test2
 };
