@@ -15,7 +15,16 @@ async function getBuildOptions(path) {
     entryPoints,
     // minify: true,
     format: "esm",
-    bundle: false,
+    bundle: true,
+    external: [
+      "react",
+      "react/jsx-runtime",
+      "react-dom",
+      "framer",
+      "framer-motion",
+      "@twind/react",
+      "twind",
+    ],
     plugins: [esmPlugin, cssPlugin({ inject: true })],
   };
 }
