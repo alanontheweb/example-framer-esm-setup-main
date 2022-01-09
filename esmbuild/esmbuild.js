@@ -10,20 +10,24 @@ const defaultOutdir = join(process.cwd(), "dist");
 
 async function getBuildOptions(path) {
   const entryPoints = await globby([`${path}/**/*.(t|j)s*`]);
+  console.log(entryPoints);
 
   return {
     entryPoints,
     // minify: true,
     format: "esm",
     bundle: false,
+
+    plugins: [esmPlugin, cssPlugin({ inject: true })],
   };
 }
 
-async function getBuildOptions(path) {
-  const entryPoints2 = await globby([`${path}/**/index.(t|j)s*`]);
+async function getBuildOptionsTwo(path) {
+  const entryPoints = await globby([`${path}/**/index.(t|j)s*`]);
+  console.log(entryPoints);
 
   return {
-    entryPoints2,
+    entryPoints,
     // minify: true,
     format: "esm",
     bundle: true,
@@ -34,7 +38,19 @@ async function getBuildOptions(path) {
 
 async function build(path = defaultPath, outdir = defaultOutdir) {
   outdir = resolve(outdir);
-  await esbuild.build({ outdir, ...(await getBuildOptions(path)) });
+  await esbuild.build({
+    outdir,
+    ...(await getBuildOptions(path)),
+  });
+  console.log(`Build done at ${outdir}`);
+}
+
+async function buildTwo(path = defaultPath, outdir = defaultOutdir) {
+  outdir = resolve(outdir);
+  await esbuild.build({
+    outdir,
+    ...(await getBuildOptionsTwo(path)),
+  });
   console.log(`Build done at ${outdir}`);
 }
 
@@ -63,6 +79,7 @@ if (command === "serve") {
   serve(path, option && parseInt(option));
 } else if (command === "build") {
   build(path, option && resolve(join(process.cwd(), option)));
+  buildTwo(path, option && resolve(join(process.cwd(), option)));
 } else {
   console.log(`Usage:\n  $ esbuild serve src 8000\n  $ esbuild build src dist`);
 }
