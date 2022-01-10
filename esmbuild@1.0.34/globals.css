@@ -4,7 +4,8 @@ body,
   height: 100%;
 }
 [class^=c-],
-[class^=tw-] {
+[class^=tw-],
+[class$="00"] {
   --tw-text-opacity: 1;
   --tw-bg-opacity: 1;
   --tw-border-opacity: 1;
