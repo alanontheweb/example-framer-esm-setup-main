@@ -3,7 +3,8 @@ body,
 [data-reactroot] {
   height: 100%;
 }
-[class^=c-] {
+[class^=c-],
+[class^=tw-] {
   --tw-text-opacity: 1;
   --tw-bg-opacity: 1;
   --tw-border-opacity: 1;

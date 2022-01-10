@@ -1,137 +1,128 @@
-const varToHsla = (colorValue) => ({ opacityVariable, opacityValue }) => {
-  if (opacityValue !== void 0) {
-    return `hsla(var(${colorValue}), ${opacityValue})`;
-  }
-  if (opacityVariable !== void 0) {
-    return `hsla(var(${colorValue}), var(${opacityVariable}, 1))`;
-  }
-  return `hsl(var(${colorValue}))`;
-};
 const theme = {
   theme: {
     colors: {
       transparent: "transparent",
       base: {
-        0: varToHsla("--base-0"),
-        50: varToHsla("--base-50"),
-        100: varToHsla("--base-100"),
-        200: varToHsla("--base-200"),
-        300: varToHsla("--base-300"),
-        400: varToHsla("--base-400"),
-        500: varToHsla("--base-500"),
-        600: varToHsla("--base-600"),
-        700: varToHsla("--base-700"),
-        800: varToHsla("--base-800"),
-        900: varToHsla("--base-900"),
-        1e3: varToHsla("--base-1000"),
-        vivid: varToHsla("--base-vivid")
+        0: "hsla(var(--base-0), var(--tw-bg-opacity))",
+        50: "hsla(var(--base-50), var(--tw-bg-opacity))",
+        100: "hsla(var(--base-100), var(--tw-bg-opacity))",
+        200: "hsla(var(--base-200), var(--tw-bg-opacity))",
+        300: "hsla(var(--primary-300), var(--tw-bg-opacity))",
+        400: "hsla(var(--base-400), var(--tw-bg-opacity))",
+        500: "hsla(var(--base-500), var(--tw-bg-opacity))",
+        600: "hsla(var(--base-600), var(--tw-bg-opacity))",
+        700: "hsla(var(--base-700), var(--tw-bg-opacity))",
+        800: "hsla(var(--base-800), var(--tw-bg-opacity))",
+        900: "hsla(var(--base-900), var(--tw-bg-opacity))",
+        1e3: "hsla(var(--base-1000), var(--tw-bg-opacity))",
+        vivid: "hsla(var(--base-vivid), var(--tw-bg-opacity))"
       },
       primary: {
-        0: varToHsla("--primary-0"),
-        50: varToHsla("--primary-50"),
-        100: varToHsla("--primary-100"),
-        200: varToHsla("--primary-200"),
-        300: varToHsla("--primary-300"),
-        400: varToHsla("--primary-400"),
-        500: varToHsla("--primary-500"),
-        600: varToHsla("--primary-600"),
-        700: varToHsla("--primary-700"),
-        800: varToHsla("--primary-800"),
-        900: varToHsla("--primary-900"),
-        1e3: varToHsla("--primary-1000"),
-        vivid: varToHsla("--primary-vivid")
+        0: "hsla(var(--primary-0), var(--tw-bg-opacity))",
+        50: "hsla(var(--primary-50), var(--tw-bg-opacity))",
+        100: "hsla(var(--primary-100), var(--tw-bg-opacity))",
+        200: "hsla(var(--primary-200), var(--tw-bg-opacity))",
+        300: "hsla(var(--primary-300), var(--tw-bg-opacity))",
+        400: "hsla(var(--primary-400), var(--tw-bg-opacity))",
+        500: "hsla(var(--primary-500), var(--tw-bg-opacity))",
+        600: "hsla(var(--primary-600), var(--tw-bg-opacity))",
+        700: "hsla(var(--primary-700), var(--tw-bg-opacity))",
+        800: "hsla(var(--primary-800), var(--tw-bg-opacity))",
+        900: "hsla(var(--primary-900), var(--tw-bg-opacity))",
+        1e3: "hsla(var(--primary-1000), var(--tw-bg-opacity))",
+        vivid: "hsla(var(--primary-vivid), var(--tw-bg-opacity))"
       },
       secondary: {
-        0: varToHsla("--secondary-0"),
-        50: varToHsla("--secondary-50"),
-        100: varToHsla("--secondary-100"),
-        200: varToHsla("--secondary-200"),
-        300: varToHsla("--secondary-300"),
-        400: varToHsla("--secondary-400"),
-        500: varToHsla("--secondary-500"),
-        600: varToHsla("--secondary-600"),
-        700: varToHsla("--secondary-700"),
-        800: varToHsla("--secondary-800"),
-        900: varToHsla("--secondary-900"),
-        1e3: varToHsla("--secondary-1000"),
-        vivid: varToHsla("--secondary-vivid")
+        0: "hsla(var(--secondary-0), var(--tw-bg-opacity))",
+        50: "hsla(var(--secondary-50), var(--tw-bg-opacity))",
+        100: "hsla(var(--secondary-100), var(--tw-bg-opacity))",
+        200: "hsla(var(--secondary-200), var(--tw-bg-opacity))",
+        300: "hsla(var(--secondary-300), var(--tw-bg-opacity))",
+        400: "hsla(var(--secondary-400), var(--tw-bg-opacity))",
+        500: "hsla(var(--secondary-500), var(--tw-bg-opacity))",
+        600: "hsla(var(--secondary-600), var(--tw-bg-opacity))",
+        700: "hsla(var(--secondary-700), var(--tw-bg-opacity))",
+        800: "hsla(var(--secondary-800), var(--tw-bg-opacity))",
+        900: "hsla(var(--secondary-900), var(--tw-bg-opacity))",
+        1e3: "hsla(var(--secondary-1000), var(--tw-bg-opacity))",
+        vivid: "hsla(var(--secondary-vivid), var(--tw-bg-opacity))"
       },
       tertiary: {
-        100: varToHsla("--tertiary-100"),
-        200: varToHsla("--tertiary-200"),
-        300: varToHsla("--tertiary-300"),
-        400: varToHsla("--tertiary-400"),
-        500: varToHsla("--tertiary-500"),
-        600: varToHsla("--tertiary-600"),
-        700: varToHsla("--tertiary-700"),
-        800: varToHsla("--tertiary-800"),
-        900: varToHsla("--tertiary-900")
+        100: "hsla(var(--tertiary-100), var(--tw-bg-opacity))",
+        200: "hsla(var(--tertiary-200), var(--tw-bg-opacity))",
+        300: "hsla(var(--tertiary-300), var(--tw-bg-opacity))",
+        400: "hsla(var(--tertiary-400), var(--tw-bg-opacity))",
+        500: "hsla(var(--tertiary-500), var(--tw-bg-opacity))",
+        600: "hsla(var(--tertiary-600), var(--tw-bg-opacity))",
+        700: "hsla(var(--tertiary-700), var(--tw-bg-opacity))",
+        800: "hsla(var(--tertiary-800), var(--tw-bg-opacity))",
+        900: "hsla(var(--tertiary-900), var(--tw-bg-opacity))"
       },
       intermediate: {
-        100: varToHsla("--intermediate-100"),
-        200: varToHsla("--intermediate-200"),
-        300: varToHsla("--intermediate-300"),
-        400: varToHsla("--intermediate-400"),
-        500: varToHsla("--intermediate-500"),
-        600: varToHsla("--intermediate-600"),
-        700: varToHsla("--intermediate-700"),
-        800: varToHsla("--intermediate-800"),
-        900: varToHsla("--intermediate-900")
+        100: "hsla(var(--intermediate-100), var(--tw-bg-opacity))",
+        200: "hsla(var(--intermediate-200), var(--tw-bg-opacity))",
+        300: "hsla(var(--intermediate-300), var(--tw-bg-opacity))",
+        400: "hsla(var(--intermediate-400), var(--tw-bg-opacity))",
+        500: "hsla(var(--intermediate-500), var(--tw-bg-opacity))",
+        600: "hsla(var(--intermediate-600), var(--tw-bg-opacity))",
+        700: "hsla(var(--intermediate-700), var(--tw-bg-opacity))",
+        800: "hsla(var(--intermediate-800), var(--tw-bg-opacity))",
+        900: "hsla(var(--intermediate-900), var(--tw-bg-opacity))"
       },
       accent: {
-        100: varToHsla("--accent-100"),
-        200: varToHsla("--accent-200"),
-        300: varToHsla("--accent-300"),
-        400: varToHsla("--accent-400"),
-        500: varToHsla("--accent-500"),
-        600: varToHsla("--accent-600"),
-        700: varToHsla("--accent-700"),
-        800: varToHsla("--accent-800"),
-        900: varToHsla("--accent-900")
+        100: "hsla(var(--accent-100), var(--tw-bg-opacity))",
+        200: "hsla(var(--accent-200), var(--tw-bg-opacity))",
+        300: "hsla(var(--accent-300), var(--tw-bg-opacity))",
+        400: "hsla(var(--accent-400), var(--tw-bg-opacity))",
+        500: "hsla(var(--accent-500), var(--tw-bg-opacity))",
+        600: "hsla(var(--accent-600), var(--tw-bg-opacity))",
+        700: "hsla(var(--accent-700), var(--tw-bg-opacity))",
+        800: "hsla(var(--accent-800), var(--tw-bg-opacity))",
+        900: "hsla(var(--accent-900), var(--tw-bg-opacity))"
       },
       success: {
-        100: varToHsla("--success-100"),
-        200: varToHsla("--success-200"),
-        300: varToHsla("--success-300"),
-        400: varToHsla("--success-400"),
-        500: varToHsla("--success-500"),
-        600: varToHsla("--success-600"),
-        700: varToHsla("--success-700"),
-        800: varToHsla("--success-800"),
-        900: varToHsla("--success-900")
+        100: "hsla(var(--success-100), var(--tw-bg-opacity))",
+        200: "hsla(var(--success-200), var(--tw-bg-opacity))",
+        300: "hsla(var(--success-300), var(--tw-bg-opacity))",
+        400: "hsla(var(--success-400), var(--tw-bg-opacity))",
+        500: "hsla(var(--success-500), var(--tw-bg-opacity))",
+        600: "hsla(var(--success-600), var(--tw-bg-opacity))",
+        700: "hsla(var(--success-700), var(--tw-bg-opacity))",
+        800: "hsla(var(--success-800), var(--tw-bg-opacity))",
+        900: "hsla(var(--success-900), var(--tw-bg-opacity))"
       },
       warning: {
-        100: varToHsla("--warning-100"),
-        200: varToHsla("--warning-200"),
-        300: varToHsla("--warning-300"),
-        400: varToHsla("--warning-400"),
-        500: varToHsla("--warning-500"),
-        600: varToHsla("--warning-600"),
-        700: varToHsla("--warning-700"),
-        800: varToHsla("--warning-800"),
-        900: varToHsla("--warning-900")
+        100: "hsla(var(--warning-100), var(--tw-bg-opacity))",
+        200: "hsla(var(--warning-200), var(--tw-bg-opacity))",
+        300: "hsla(var(--warning-300), var(--tw-bg-opacity))",
+        400: "hsla(var(--warning-400), var(--tw-bg-opacity))",
+        500: "hsla(var(--warning-500), var(--tw-bg-opacity))",
+        600: "hsla(var(--warning-600), var(--tw-bg-opacity))",
+        700: "hsla(var(--warning-700), var(--tw-bg-opacity))",
+        800: "hsla(var(--warning-800), var(--tw-bg-opacity))",
+        900: "hsla(var(--warning-900), var(--tw-bg-opacity))"
       },
       caution: {
-        100: varToHsla("--caution-100"),
-        200: varToHsla("--caution-200"),
-        300: varToHsla("--caution-300"),
-        400: varToHsla("--caution-400"),
-        500: varToHsla("--caution-500"),
-        600: varToHsla("--caution-600"),
-        700: varToHsla("--caution-700"),
-        800: varToHsla("--caution-800"),
-        900: varToHsla("--caution-900")
+        100: "hsla(var(--caution-100), var(--tw-bg-opacity))",
+        200: "hsla(var(--caution-200), var(--tw-bg-opacity))",
+        300: "hsla(var(--caution-300), var(--tw-bg-opacity))",
+        400: "hsla(var(--caution-400), var(--tw-bg-opacity))",
+        500: "hsla(var(--caution-500), var(--tw-bg-opacity))",
+        600: "hsla(var(--caution-600), var(--tw-bg-opacity))",
+        700: "hsla(var(--caution-700), var(--tw-bg-opacity))",
+        800: "hsla(var(--caution-800), var(--tw-bg-opacity))",
+        900: "hsla(var(--caution-900), var(--tw-bg-opacity))"
       },
       alert: {
-        100: varToHsla("--alert-100"),
-        200: varToHsla("--alert-200"),
-        300: varToHsla("--alert-300"),
-        400: varToHsla("--alert-400"),
-        500: varToHsla("--alert-500"),
-        600: varToHsla("--alert-600"),
-        700: varToHsla("--alert-700"),
-        800: varToHsla("--alert-800"),
-        900: varToHsla("--alert-900")
+        100: "hsla(var(--alert-100), var(--tw-bg-opacity))",
+        200: "hsla(var(--alert-200), var(--tw-bg-opacity))",
+        300: "hsla(var(--alert-300), var(--tw-bg-opacity))",
+        400: "hsla(var(--alert-400), var(--tw-bg-opacity))",
+        500: "hsla(var(--alert-500), var(--tw-bg-opacity))",
+        600: "hsla(var(--alert-600), var(--tw-bg-opacity))",
+        700: "hsla(var(--alert-700), var(--tw-bg-opacity))",
+        800: "hsla(var(--alert-800), var(--tw-bg-opacity))",
+        900: "hsla(var(--alert-900), var(--tw-bg-opacity))"
       }
     },
     fontFamily: {
@@ -161,6 +152,5 @@ const theme = {
   }
 };
 export {
-  theme,
-  varToHsla
+  theme
 };
