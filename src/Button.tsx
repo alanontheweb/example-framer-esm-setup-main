@@ -26,7 +26,7 @@ export const Test2 = () => {
         hover:bg-gray-600
       `,
         primary: `
-        text-white bg-red
+        text-white bg-primary-600
         hover:bg-purple-600
       `,
       },
