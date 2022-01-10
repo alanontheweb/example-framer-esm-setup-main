@@ -9,7 +9,8 @@ Public folders in next.js are special for serving static files. Path begins with
 */
 
 [class^="c-"],
-[class^="tw-"] {
+[class^="tw-"],
+[class$="00"] {
   --tw-text-opacity: 1;
   --tw-bg-opacity: 1;
   --tw-border-opacity: 1;
