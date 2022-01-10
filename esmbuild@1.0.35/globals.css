@@ -15,11 +15,11 @@ body,
   --tw-bg-opacity: 1;
   background-color: hsla(var(--base-0), var(--tw-bg-opacity));
 }
-.dark .dark\:bg-base-0 {
+.theme-dark .theme-dark\:bg-base-0 {
   --tw-bg-opacity: 1;
   background-color: hsla(var(--base-0), var(--tw-bg-opacity));
 }
-.light {
+.theme-light {
   --base-0:
     245,
     0%,
@@ -461,7 +461,7 @@ body,
     80%,
     35%;
 }
-.dark {
+.theme-dark {
   --base-0:
     217,
     20%,
