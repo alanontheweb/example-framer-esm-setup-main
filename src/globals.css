@@ -8,7 +8,8 @@ body,
 Public folders in next.js are special for serving static files. Path begins with the base URL and not /Public 
 */
 
-[class^='c-'] {
+[class^="c-"],
+[class^="tw-"] {
   --tw-text-opacity: 1;
   --tw-bg-opacity: 1;
   --tw-border-opacity: 1;
