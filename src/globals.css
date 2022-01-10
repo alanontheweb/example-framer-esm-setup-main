@@ -24,13 +24,13 @@ Public folders in next.js are special for serving static files. Path begins with
   background-color: hsla(var(--base-0), var(--tw-bg-opacity));
 }
 
-.dark .dark\:bg-base-0 {
+.theme-dark .theme-dark\:bg-base-0 {
   --tw-bg-opacity: 1;
   background-color: hsla(var(--base-0), var(--tw-bg-opacity));
 }
 
 /* prettier-ignore-start */
-.light {
+.theme-light {
   --base-0: 245, 0%, 100%;
   --base-50: 248, 19.7%, 97.6%;
   --base-100: 247, 16.3%, 95.3%;
@@ -161,7 +161,7 @@ Public folders in next.js are special for serving static files. Path begins with
   --alert-900: 343, 80%, 35%;
 }
 
-.dark {
+.theme-dark {
   --base-0: 217, 20%, 17%;
   --base-100: 215, 25%, 23%;
   --base-200: 215, 20%, 26%;
